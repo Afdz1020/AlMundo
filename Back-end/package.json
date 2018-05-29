@@ -1,0 +1,42 @@
+{
+  "name": "almundo",
+  "version": "1.0.0",
+  "description": "Backend de aplicación al mundo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run grunt && SET NODE_ENV=development && nodemon ./bin/www",
+    "grunt": "grunt",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afdz1020/AlMundo.git"
+  },
+  "author": "Andres Diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Afdz1020/AlMundo/issues"
+  },
+  "homepage": "https://github.com/Afdz1020/AlMundo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.11.1",
+    "@types/method-override": "0.0.31",
+    "@types/morgan": "^1.7.35",
+    "grunt": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-ts": "^6.0.0-beta.19",
+    "nodemon": "^1.17.5",
+    "typescript": "^2.8.3"
+  }
+}
