@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from "express";
 import { BaseRoute } from "./route";
-
+import { Hoteles } from "../controller/hotelController";
 
 /**
  * / route
@@ -23,6 +23,10 @@ export class IndexRoute extends BaseRoute {
         //add home page route
         router.get("/", (req: Request, res: Response, next: NextFunction) => {
             res.send({message:"Al mundo"});
+        });
+
+        router.post("/getHotels", (req: Request, res: Response, next: NextFunction) => {
+            new Hoteles(req,res,next).getHotels();
         });
     }
 
