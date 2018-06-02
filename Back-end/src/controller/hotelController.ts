@@ -12,7 +12,7 @@ export class Hoteles {
 
         try {
             let hotelResult = hoteles.filter((hotel) => {
-                return nameHotel ? hotel.name === nameHotel : start ? hotel.stars == start : hotel;
+                return nameHotel ? hotel.name === nameHotel : start ? hotel.stars === parseInt(start) : hotel;
             });
 
             this.responseExpress.status(200).send(hotelResult);
