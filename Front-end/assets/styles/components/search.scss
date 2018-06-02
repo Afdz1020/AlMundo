@@ -1,0 +1,31 @@
+.search-content {
+    top: 100px;
+    left: 25px;
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    background-color: #fff;
+    span{
+        font-size: 18px;
+        padding-bottom: 5px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+    }
+    hr {
+        margin-top: 40px !important;
+        border-top:4px solid #eee !important;
+    }
+    img{
+        width: 40px;
+        height: 12px;
+        
+    }
+    h5{
+        position: absolute;
+        left: 36px;
+        top: 58px;
+        color:blue;
+    }
+}
